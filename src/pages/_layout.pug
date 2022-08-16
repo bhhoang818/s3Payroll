@@ -1,0 +1,30 @@
+block var
+
+doctype html
+
+html(lang="en")
+
+	head
+		meta(charset='UTF-8')
+		title #{title}
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(name='description' content='')
+		meta(name='keywords' content='')
+		meta(name='author' content='SRBThemes')
+		link(rel="stylesheet" href="./css/main.min.css")
+		link(rel="stylesheet", href="./css/plugins.min.css")
+		link(rel="stylesheet", href="./fonts/all.css")
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+		link(rel='shortcut icon' type='image/png' href='favicon.ico')
+		
+	body(class=bodyClass)
+		block header
+			include ../components/layout/header/header.pug
+		main
+			block main
+		block footer
+			include ../components/layout/footer/footer.pug
+		#overlay
+		script(src="./js/plugins.min.js") 
+		script(src="./js/main.min.js") 
+		
