@@ -24,6 +24,10 @@
     .wrap-table 
         table 
             tr 
+                th 
+                    .form-check 
+                        input#check(type="checkbox", name="check")
+                        label.label-checkbox(for='check')
                 th
                     p STT
                         a(href="") 
@@ -46,6 +50,10 @@
                     p Cảnh báo
             -for(i=1; i<11; i++)
                 tr
+                    td 
+                        .form-check 
+                            input#check_1(type="checkbox", name="check")
+                            label.label-checkbox(for='check_1')
                     td
                         p 1
                     td

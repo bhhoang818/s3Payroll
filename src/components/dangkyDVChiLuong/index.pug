@@ -154,18 +154,17 @@ section.hero-section.info-customer-page
                                         .form-group.d-flex.align-items-center
                                             a.btn.btn-small.bg-white.border.rounded.fw-bold.color-black.ms-auto(href="") Thực hiện lại
                                             a.btn.btn-small.bg-yellow.border.rounded.fw-bold.color-black.ms-3(href="") Thêm mới
-                                    .col-xl-12 
-                                        .form-group
-                                            label.form-label(for='formFile') File format xlsx, xls, csv UTF8.
-                                            input.form-control#formFile(type='file' placeholder='File format xlsx, xls, csv UTF8.')
+                                    //- .col-xl-12 
+                                    //-     .form-group
+                                    //-         label.form-label(for='formFile') File format xlsx, xls, csv UTF8.
+                                    //-         input.form-control#formFile(type='file' placeholder='File format xlsx, xls, csv UTF8.')
                         
                         include ./table.pug
                     .wrap-button.d-flex.align-items-center.justify-content-center.mb-5 
                         a.btn-default.bg-red.rounded-2.fw-bold.color-white(href="") 
-                            img(src="./images/icons/left-arrow.svg", alt="")
-                            | Trở về
-                        a.btn-default.bg-blue.rounded-2.fw-bold.color-white.ms-3(href="")
-                            img(src="./images/icons/edit.svg", alt="") 
-                            | Cập nhật đăng ký
-                    .panel-footer.bg-white.p-4
-                        include ../layout/lichsupheduyet/lichsupheduyet.pug
+                            img(src="./images/icons/close-white.svg", alt="")
+                            | Hủy
+                        a.btn-default.bg-green.rounded-2.fw-bold.color-white.ms-3(href="")
+                            | Chuyển duyệt
+                            img(src="./images/icons/right-white.svg", alt="") 
+                    
