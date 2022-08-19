@@ -1,0 +1,171 @@
+section.hero-section.info-customer-page 
+    .container-fluid
+        .row
+            .col-xxl-3.col-xl-12.wrap-left 
+                include ../layout/inforCustomer/index.pug
+            .col-xxl-9.col-xl-12.wrap-right 
+                .panel
+                    .panel-heading.d-flex.align-items-center.justify-content-between.bg-white.p-4.mb-4.rounded-3
+                        h1.hero-title Đăng ký dịch vụ chi lương
+                        //- .warning-box.d-flex.align-items-center 
+                        //-     span Chưa đăng ký số lượng nhân sự nhận lương
+                        //-     a.fw-simibold.ms-3.bg-gray(href="") Trả về
+                        //-     a.fw-simibold.ms-3.bg-green.hidden(href="") Đồng ý
+                        //-     a.fw-simibold.ms-3.bg-red2.hidden(href="") Từ chối
+                    .panel-body.mb-5
+                        .panel-body__content.bg-white.p-4.mb-4.rounded-3  
+                            form.wrap-form(action="") 
+                                .row 
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Quỹ lương đăng ký
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='holder' value='100.000.000.000đ')
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Cán bộ nhân viên quản lý
+                                                span *
+                                            select.select.form-control( name="") 
+                                                option(value="HD0923577 - Hoàn Văn Hảo") HD0923577 - Hoàn Văn Hảo
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Hạn mức tài trợ chi lương
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='holder' value='100.000.000.000đ')
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Số CBCNV đăng ký
+                                                span *
+                                            select.select.form-control( name="") 
+                                                option(value="1000") 1000
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Dư nợ tài trợ chi lương
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='holder' value='100.000.000.000đ')
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Gói combo doanh nghiệp
+                                                span *
+                                            select.select.form-control( name="") 
+                                                option(value="C1") C1
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Ngày hiệu lực hợp đồng
+                                                span *
+                                            input.form-control#datePicker( type="text", name="datePicker" value='28/08/2021 - 28/08/2025')
+                                    .col-xl-6 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Email nhận kết quả
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='holder' value='Tacdat@gmail.com, minhqn@gmail.com')
+                                    .col-xl-12
+                                        .form-check.pt-4.mt-4.mb-4
+                                            input#comboCheckbox(type="checkbox", name="")
+                                            label.label-checkbox(for="comboCheckbox") Tuỳ chỉnh combo theo ngoại lệ 
+                                        #toggleSide.mb-4 
+                                            .row 
+                                                .col-xl-6
+                                                    .form-group.d-flex.align-items-center.justify-content-between
+                                                        label.fw-bold(for='name') Gói combo doanh nghiệp
+                                                            span *
+                                                        select.select.form-control( name="") 
+                                                            option(value="C1") C1
+                                                    .form-group.d-flex.align-items-center.justify-content-between
+                                                        label.fw-bold(for='name') Ngày hiệu lực tờ trình
+                                                            span *
+                                                        input.form-control#datePicker(type="text", name="datePicker" value='28/08/2021 - 28/08/2025')
+                                                    .form-group.d-flex.align-items-center.justify-content-between
+                                                        label.fw-bold(for='name') Số tờ trình
+                                                            span *
+                                                        input.form-control( type='name', name='name' placeholder='holder' value='PRDN125324763548 ')
+                                                .col-xl-6 
+                                                    .form-group.d-flex.justify-content-between
+                                                        label.fw-bold(for='name') Nhóm Doanh Nghiệp
+                                                        ul 
+                                                            li 
+                                                                a(href="") KHDN00169235
+                                                                    span 
+                                                                        img(src="./images/icons/close.svg", alt="")
+                                                            li 
+                                                                a(href="") KHDN00169235
+                                                                    span 
+                                                                        img(src="./images/icons/close.svg", alt="")
+                                                            li 
+                                                                a(href="") KHDN00169235
+                                                                    span 
+                                                                        img(src="./images/icons/close.svg", alt="")
+                                                            li 
+                                                                a(href="") + 3
+                                                    a.add-coop.fw-simibold.color-blue.d-flex.justify-content-end(href="") Thêm doanh nghiệp 
+                                                        img(src="./images/icons/layer-plus.svg", alt="")
+                                    .col-xl-12 
+                                        .file-attach.pt-4.pb-4.d-flex.align-items-center.justify-content-between
+                                            h2 Hồ sơ đính kèm
+                                            a(href="") Xem hồ sơ
+                                                img(src="./images/icons/link-external.svg", alt="")
+                        
+                        .panel-body__content.bg-white.p-4.mb-4.rounded-3
+                            h2.sub-title.fw-bold.mb-4 Chủ doanh nghiệp / NGƯỜI NHẬN LƯƠNG
+                            form.wrap-form(action="") 
+                                .row 
+                                    .col-xl-4.mb-2 
+                                        .form-group.search-box.d-flex.align-items-center.justify-content-between
+                                            input.form-control( type='name', name='name' placeholder='holder' value='32151463')
+                                            button 
+                                                img(src="./images/icons/search-gray.svg", alt="")
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Phân nhóm
+                                                span *
+                                            select.select.form-control( name="") 
+                                                option(value="") Chọn
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Hạn mức thẻ TD
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='Nhập hạn mức' value='')
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Họ tên
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='Họ tên' value='')
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Ngày sinh
+                                                span *
+                                            input.form-control( type="text", name="date" value='28/08/2021')
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Số GTTT cũ
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='Nhập số GTTT' value='')
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Số GTTT
+                                                span *
+                                            input.form-control( type="text", name="" placeholder='Nhập số GTTT')
+                                    .col-xl-4.mb-2  
+                                        .form-group.d-flex.align-items-center.justify-content-between
+                                            label.fw-bold(for='name') Số điện thoại
+                                                span *
+                                            input.form-control( type='name', name='name' placeholder='Nhập số ĐT')
+                                    .col-xl-4.mb-2 
+                                        .form-group.d-flex.align-items-center
+                                            a.btn.btn-small.bg-white.border.rounded.fw-bold.color-black.ms-auto(href="") Thực hiện lại
+                                            a.btn.btn-small.bg-yellow.border.rounded.fw-bold.color-black.ms-3(href="") Thêm mới
+                                    .col-xl-12 
+                                        .form-group
+                                            label.form-label(for='formFile') File format xlsx, xls, csv UTF8.
+                                            input.form-control#formFile(type='file' placeholder='File format xlsx, xls, csv UTF8.')
+                        
+                        include ./table.pug
+                    .wrap-button.d-flex.align-items-center.justify-content-center.mb-5 
+                        a.btn-default.bg-red.rounded-2.fw-bold.color-white(href="") 
+                            img(src="./images/icons/left-arrow.svg", alt="")
+                            | Trở về
+                        a.btn-default.bg-blue.rounded-2.fw-bold.color-white.ms-3(href="")
+                            img(src="./images/icons/edit.svg", alt="") 
+                            | Cập nhật đăng ký
+                    .panel-footer.bg-white.p-4
+                        include ../layout/lichsupheduyet/lichsupheduyet.pug

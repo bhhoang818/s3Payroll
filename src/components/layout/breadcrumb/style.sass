@@ -1,0 +1,56 @@
+.breadcrumb-wrapper
+    padding: 24px 24px 16px
+    display: flex
+    align-items: center
+    .breadcrumb
+        width: 80%
+        display: flex
+        align-items: center
+        .breadcrumb-item
+            position: relative
+            &:first-child
+                a
+                    white-space: nowrap
+                    font-weight: 700
+                    color: #464646
+                    font-size: 14px
+                    display: flex
+                    align-items: center
+                    img
+                        margin-right: 8px
+        .breadcrumb-item + .breadcrumb-item
+            margin-left: 40px
+            a
+                overflow: hidden
+                display: -webkit-box
+                text-overflow: ellipsis
+                -webkit-box-orient: vertical
+                -webkit-line-clamp: 1
+                font-size: 14px
+                color: #C7CDD5
+            &::before
+                position: absolute
+                left: -20px
+                content: '/'
+                color: #464646
+                font-weight: 700
+    .back-up
+        display: flex
+        align-items: center
+        margin-left: auto
+        cursor: pointer
+        em,
+        span
+            font-weight: 400
+            font-size: 14px
+            color: #D12421
+        span
+            margin-left: 10px
+    @media screen and ( max-width: 1024px )
+        padding: 16px
+        .breadcrumb
+            width: 70%
+            .breadcrumb-item
+
+            .breadcrumb-item + .breadcrumb-item
+                margin-left: 30px

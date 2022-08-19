@@ -15,15 +15,13 @@
         pointer-events: visible
 .hero-title
     font-weight: 700
-    font-size: 80px
-    line-height: 1.2
-    letter-spacing: -0.15px
-    color: #000000
-    font-family: 'SF Pro Display'
-    @media screen and ( max-width: 1366.98px )
-        font-size: 60px
-    @media screen and ( max-width: 575.98px )
-        font-size: 40px
+    font-size: 32px
+    line-height: 48px
+    color: #464646
+.sub-title
+    font-size: 20px
+    color: #464646
+    line-height: 28px
 .lcl
     overflow: hidden
     display: -webkit-box
@@ -44,3 +42,190 @@
 
     &-5
         -webkit-line-clamp: 5
+.wrapper-main
+    padding-left: 110px
+    padding-top: 61px
+    @media screen and ( max-width: 992.98px )
+        padding-left: 0
+.dot
+    display: block
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    &.bg-green
+        background: #7DBA00
+    &.bg-yellow
+        background: #F7B512
+    &.bg-red
+        background: #EB2629
+    &.bg-orange
+        background: #FF993B
+.status
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0px 8px
+    gap: 10px
+    min-width: 104px
+    height: 24px
+    border-radius: 4px
+    span
+        font-weight: 600
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        color: #464646
+        white-space: nowrap
+    &--bgblue
+        background: #80C2FF
+    &--bgyellow
+        background: #FFDF80
+    &--bgbrand
+        background: #FFC20E
+    &--bgorange
+        background: #FFB580
+    &--bggreen
+        background: #ABD653
+    &--bggreen1
+        background: #7DBA00
+    &--bggreen2
+        background: #4FA800
+    &--bgred
+        background: #FCA5A6
+    &--bggray
+        background: #D3D8DE
+
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.nice-select .option:hover
+    background: rgba($color: #FFC20E, $alpha: .4) !important
+.form-check
+    padding: 0 !important
+    margin-bottom: 0 !important
+    min-height: unset !important
+    input[type='checkbox']
+        display: none
+    .label-checkbox
+        color: #454F5B
+        line-height: 24px
+        position: relative
+        padding-left: 30px
+        cursor: pointer
+        &::before
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 50%
+            left: 0
+            width: 18px
+            height: 18px
+            background: #FFFFFF
+            border: 1px solid #D3D8DE
+            border-radius: 4px
+            content: ''
+            font-family: Material Icons
+            transform: translateY(-50%)
+    input[type='checkbox']:checked ~ .label-checkbox::before
+        content: '\e5ca'
+        color: #454F5B
+        background: #F7B512
+        border: 1px solid $trans
+.color
+    &-black
+        color: #454F5B !important
+    &-white
+        color: #fff !important
+    &-blue
+        color: #1890FF
+.bg
+    &-orange0
+        background: #FFF0E5
+    &-yellow
+        background: #FFC20E
+    &-red
+        background: #DD4B39
+    &-red1
+        background: #FDE8E8
+    &-red2
+        background: #FCA5A6
+    &-blue
+        background: #3C8DBC
+    &-blue1
+        background: #E5F3FF
+    &-green
+        background: #4FA800
+    &-green0
+        background: #F2FAE2
+    &-gray
+        background: #D3D8DE
+    &-light
+        background: rgba(255, 255, 255, 0.7)
+    &-light0
+        background: #F8F9FA
+.container--tabs
+    .nav-tabs
+        padding-bottom: 16px
+        overflow-x: auto
+        border: 0
+        li
+            cursor: pointer
+            a
+                padding: 14px 8px
+                position: relative
+                font-weight: 600
+                font-size: 16px
+                color: #212B36
+                white-space: nowrap
+            &.active
+                a
+                    color: #BE1128
+                    &::after
+                        position: absolute
+                        width: 100%
+                        height: 4px
+                        content: ''
+                        background: #BE1128
+                        bottom: 0
+                        left: 0
+    .tab-content
+        .panel
+            display: none
+            &.active
+                display: block
+.button-upload
+    .custom-file-input
+        position: relative
+        z-index: 2
+        width: 204px
+        height: 44px
+        opacity: 0
+        cursor: pointer
+        &:hover
+            background: linear-gradient(0deg,#ffc20e,#f7a30a 152.65%)
+
+    .custom-file-label
+        cursor: pointer
+        position: absolute
+        width: 204px
+        margin-bottom: 0
+        top: 0
+        left: 0
+        z-index: 1
+        height: 44px
+        font-weight: 600
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $neutral-4
+        background: #F7B512
+        border-radius: 8px
+        span
+            padding-left: 18px
+            font-weight: 700 !important
+            font-size: 16px
+            color: #454F5B !important
+            font-style: normal !important
+
+        &:hover
+            background: linear-gradient(0deg,#ffc20e,#f7a30a 152.65%)

@@ -15,6 +15,7 @@ export const sassTask = () => {
 			"src/components/core/_**.sass",
 			"src/components/core/**.sass",
 			"src/components/**/**.sass",
+
 		])
 		.pipe(concat("main.min.sass"))
 		.pipe(sass().on("error", sass.logError))

@@ -1,0 +1,158 @@
+section.hero-section.home-section
+    .container-fluid 
+        .row 
+            .col-xl-3.col-lg-12
+                .wrapper-left 
+                    .panel  
+                        .panel-heading
+                            h2 Chọn trạng thái
+                        .panel-body
+                            ul.p-4
+                                li.mb-4.active 
+                                    a.d-flex.align-items-center(href="") 
+                                        em.material-icons mail_outline
+                                        span Tất cả
+                                li.mb-4 
+                                    a.d-flex.align-items-center(href="") 
+                                        em.material-icons done_all
+                                        span Bổ sung hồ sơ
+                                li 
+                                    a.d-flex.align-items-center(href="") 
+                                        em.material-icons schedule
+                                        span Chưa xử lý
+                    .panel  
+                        .panel-heading
+                            h2 Mức độ ưu tiên
+                        .panel-body
+                            ul.p-4
+                                li.mb-4 
+                                    a.d-flex.align-items-center(href="") 
+                                        .dot.bg-green 
+                                        span.txt Thấp
+                                li.mb-4 
+                                    a.d-flex.align-items-center(href="") 
+                                        .dot.bg-yellow 
+                                        span.txt Trung bình
+                                li
+                                    a.d-flex.align-items-center(href="") 
+                                        .dot.bg-red 
+                                        span.txt Khẩn cấp
+            .col-xl-9.col-lg-12 
+                .wrapper-right
+                    .panel
+                        .panel-heading.d-flex.align-items-center 
+                            .panel-heading--left.d-flex.align-items-center 
+                                label.txt(for="") Chủ đề / Loại yêu cầu 
+                                select.ms-3.select
+                                    option(value='hide') Gọi điện thoại khách hàng
+                                    option(value='call') Gọi điện thoại khách hàng
+                                .form-check.ms-3
+                                    input#checkbox1(type="checkbox")
+                                    label.label-checkbox(for="checkbox1")
+                                        | Yêu cầu từ khách hàng 
+                            .panel-heading--right.d-flex.align-items-center.ms-auto 
+                                .select-group.d-flex.align-items-center 
+                                    select
+                                        option(value='hide') Năm
+                                        option(value='2022') 2022
+                                        option(value='2021') 2021
+                                    select.ms-3
+                                        option(value='hide') Tháng
+                                        option(value='january') Tháng 1
+                                        option(value='february') Tháng 2
+                        .panel-body 
+                            form.mb-3(action="")
+                                .form-group.d-flex.align-items-center 
+                                    button
+                                        img(src="./images/icons/search-black.svg", alt="")
+                                    input.form-control(type="text" placeholder='Tìm kiếm') 
+                            .wrap-table 
+                                table 
+                                    tr
+                                        td 
+                                            .dot.bg-green 
+                                        td 
+                                            a(href="dich-vu-chi-luong.html") 
+                                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                                        td 
+                                            .status.status--bggreen
+                                                span Đã duyệt
+                                        td
+                                            .date-time 
+                                                span 03/04/2022
+                                        td 
+                                            .user-avatar 
+                                                img(src="./images/icons/avatar.png", alt="")
+                                    tr 
+                                        td 
+                                            .dot.bg-yellow
+                                        td 
+                                            a(href="kiem-soat-vien-duyet-mo-the.html")
+                                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                                        td 
+                                            .status.status--bggray 
+                                                span Trả về
+                                        td
+                                            .date-time 
+                                                span 03/04/2022
+                                        td 
+                                            .user-avatar 
+                                                img(src="./images/icons/avatar.svg", alt="")
+                                    tr 
+                                        td 
+                                            .dot.bg-yellow 
+                                        td 
+                                            a(href="")
+                                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                                        td 
+                                            .status.status--bgred
+                                                span Từ chối
+                                        td
+                                            .date-time 
+                                                span 03/04/2022
+                                        td 
+                                            .user-avatar 
+                                                img(src="./images/icons/avatar.svg", alt="")
+                                    tr 
+                                        td 
+                                            .dot.bg-green 
+                                        td 
+                                            a(href="")
+                                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                                        td 
+                                            .status.status--bgorange
+                                                span Bổ sung hồ sơ
+                                        td
+                                            .date-time 
+                                                span 03/04/2022
+                                        td 
+                                            .user-avatar 
+                                                img(src="./images/icons/avatar.svg", alt="")
+                                    tr 
+                                        td 
+                                            .dot.bg-red 
+                                        td 
+                                            a(href="")
+                                                p Chạy danh sách KH đến hạn sổ tiết kiệm trên KM
+                                        td 
+                                            .status.status--bgorange
+                                                span Bổ sung hồ sơ
+                                        td
+                                            .date-time 
+                                                span 03/04/2022
+                                        td 
+                                            .user-avatar 
+                                                img(src="./images/icons/avatar.png", alt="")
+                                    
+
+
+
+
+
+
+
+
+
+
+
+

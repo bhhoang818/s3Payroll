@@ -1,0 +1,82 @@
+.panel-body__content.bg-white.p-4.rounded-3
+    .panel-body__content--heading 
+        h2.hero-title.mb-4.text-uppercase.fw-bold Danh sách nhân sự nhận lương KHDN
+        .box-filter.mb-4
+            form(action="" method="method")
+                .row 
+                    .col-xl-6.d-flex
+                        .form-group.search-input.d-flex.align-items-center
+                            input.form-control(type='name', name='name' placeholder='holder' value='32151463')
+                            button(type='submit')
+                                img(src="./images/icons/search-black.svg", alt="")
+                        .form-group.d-flex.align-items-center.ms-3
+                            label.fw-bold(for='name') Ngày sinh
+                            .input-datepicker.ms-3
+                                input.form-control(type='text', name='date' placeholder='Chọn' )
+                    .col-xl-6.d-flex.align-items-center
+                        .form-group.d-flex.align-items-center
+                            label.fw-bold(for='name') Phân nhóm
+                            select.ms-3.select.form-control(name="") 
+                                option(value="Chọn") Chọn
+                        .form-group.d-flex.align-items-center.ms-auto
+                            button.fw-bold.rounded-2.border.btn-small.bg-white Bỏ lọc
+                            button.fw-bold.rounded-2.btn-small.bg-yellow.ms-3 Lọc kết quả
+    .wrap-table 
+        table 
+            tr 
+                th
+                    p STT
+                        a(href="") 
+                            img(src="./images/icons/unfold_more.svg", alt="")
+                th
+                    p Họ và tên
+                th
+                    p Ngày sinh
+                th
+                    p Số GTTT cũ
+                th
+                    p Số GTTT
+                th
+                    p Số điện thoại
+                th
+                    p Hạn mức thẻ TD
+                th
+                    p Phân nhóm
+                th
+                    p Cảnh báo
+            -for(i=1; i<11; i++)
+                tr
+                    td
+                        p 1
+                    td
+                        p Hoàng Thị Thanh Mai
+                    td
+                        p 12/02/1959
+                    td
+                        p 909202949798
+                    td
+                        p 909202949798
+                    td
+                        p 0917749254
+                    td
+                        p 5.000.000đ
+                    td
+                        p Chủ doanh nghiệp
+                    td
+                        p 
+        nav.mt-4.d-flex.align-items-center.justify-content-between.ps-4.pe-4
+            ul.pagination
+                li.page-item
+                    a.page-link(href='#') 
+                        img(src="./images/icons/left.svg", alt="")
+                li.page-item
+                    a.page-link(href='#') 1
+                li.page-item
+                    a.page-link(href='#') 2
+                li.page-item
+                    a.page-link(href='#') 3
+                li.page-item
+                    a.page-link(href='#') 
+                        img(src="./images/icons/arrow-right.svg", alt="")
+            button.fw-bold.btn.btn-small.bg-yellow.rounded-2(type="submit") 
+                | Xuất danh sách

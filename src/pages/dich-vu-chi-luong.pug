@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'Dịch vụ chi lương khách hàng doanh nghiệp'
+	- var bodyClass = 'bodyPage'
+
+block main
+	include ../components/layout/search-box/index.pug
+	include ../components/dvChiLuong/HoSoTraVeDieuChinh.pug

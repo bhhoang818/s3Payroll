@@ -1,0 +1,65 @@
+.popup-detail
+    display: none
+    &.regular
+        padding: 24px !important
+        box-shadow: 0px 14px 40px rgba(33, 43, 54, 0.1)
+        border-radius: 8px
+        max-width: 750px !important
+        width: 100%
+
+        .panel
+            &-heading
+                margin-bottom: 24px
+                .heading
+                    font-size: 28px
+                    line-height: 48px
+                    color: #212B36
+                    margin-bottom: 24px
+                h2
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 24px
+                    text-align: center
+                    color: #454F5B
+                p
+                    font-weight: 400
+                    text-align: center
+            &-body
+                margin-left: -24px
+                margin-right: -24px
+                .wrap-table
+                    table
+                        width: 100%
+                        tr
+                            th
+                                padding: 16px 8px
+                                background: #EAEEF2
+                                p
+                                    font-weight: 700
+                                    font-size: 16px
+                                    line-height: 24px
+                                    color: #464646
+
+                                &:first-child
+                                    border-radius: 12px 0 0 0
+                                &:last-child
+                                    border-radius: 0 12px 0 0
+                            td
+                                padding: 16px 8px
+                                p
+                                    font-size: 20px
+                                    line-height: 28px
+                                    color: #212B36
+                                    white-space: nowrap
+                                &:first-child
+                                    text-align: center
+                    .desc
+                        text-align: center
+                        font-size: 16px
+                        line-height: 24px
+                        text-align: center
+                        color: #454F5B
+            &-footer
+                margin-left: -24px
+                margin-right: -24px
+                border-top: 1px solid #EAEEF2

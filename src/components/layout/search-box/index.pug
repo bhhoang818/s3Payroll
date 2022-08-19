@@ -1,0 +1,24 @@
+.search-container.mb-4
+    .wrapper-content 
+        h2.search-title Tìm kiếm khách hàng
+        form.wrap-form.d-flex.align-items-center.justify-content-between(action="")
+            .form-group 
+                label(for="") Mã khách hàng:
+                input.form-control(type="text" placeholder="Nhập mã khách hàng")
+            .form-group 
+                label(for="") CMND/CCCD/MST:
+                input.form-control(type="text" placeholder="Nhập số CMNN/CCCD/MST")
+            .form-group 
+                label(for="") Điện thoại:
+                input.form-control(type="text" placeholder="Nhập số điện thoại")
+            .wrap-button.d-flex.align-items-center 
+                button.btn.btn-search(type='submit')
+                    img(src="./images/icons/search-black.svg", alt="")
+                a.btn.btn-scan.handle.text-center(href="/quet-van-tay.html")
+                    img(src="./images/icons/handle-scan.svg", alt="")
+                a.btn.btn-scan.face.text-center(href="https://bhhoang818.github.io/demo360oCustomerView/quet-khuon-mat.html")
+                    img(src="./images/icons/face-scan.svg", alt="")
+            
+    .close-box 
+        em.material-icons expand_less
+

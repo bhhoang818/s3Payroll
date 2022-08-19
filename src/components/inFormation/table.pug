@@ -1,0 +1,689 @@
+section.table-sec.hero-section       
+    .container-fluid
+        .container--tabs
+            ul.nav.nav-tabs.d-flex.align-items-center
+                li.active
+                    a(href='#tab-1') Tiền gửi
+                li
+                    a(href='#tab-2') Tiền vay
+                li
+                    a(href='#tab-3') Dịch vụ trực tuyến 
+                li
+                    a(href='#tab-4') Thẻ    
+                li
+                    a(href='#tab-5') Chi lương
+                li
+                    a(href='#tab-6') Chương trình khuyến mãi     
+            .tab-content
+                #tab-1.panel.active
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th.p-3 
+                                    .title
+                                        span STT
+                                th.p-3 
+                                    .title 
+                                        span Số tài khoản
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title
+                                        span Loại TK
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title
+                                        span Trạng thái
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Loại tiền
+                                th.p-3 
+                                    .title 
+                                        span Số dư kế toán
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Số dư khả dụng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Số dư bị phong tỏa
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Ngày mở
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title
+                                        span Ngày đáo hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Ngày tất toán
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3  
+                                    .title 
+                                        span Kỳ hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Lãi suất
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Chương trình ưu đãi
+                                th.p-3 
+                                    .title 
+                                        span Ngày GD cuối cùng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title
+                                        span Giá trị GD cao nhất 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title
+                                        span Mức GD cao nhất 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th.p-3 
+                                    .title 
+                                        span Người liên quan
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                            -for(i=0; i<6; i++)
+                                tr 
+                                    td.p-3 1
+                                    td.p-3
+                                        span 00270489653214
+                                    td.p-3
+                                        .status.status--bggray
+                                            span.color-black Tạm khóa
+                                        .status.status--bggreen2
+                                            span.color-black Active
+                                    td.p-3 Thông thường/ ismart/skyone
+                                    td.p-3 VND
+                                    td.p-3 50,000,000
+                                    td.p-3 50,000,000
+                                    td.p-3 20,000,000.0
+                                    td.p-3 30/07/2021
+                                    td.p-3 30/07/2021
+                                    td.p-3 30/07/2021
+                                    td.p-3 3M
+                                    td.p-3 16,5%
+                                    td.p-3 
+                                        input#checkbox.form-control(type="checkbox")
+                                        span.form-label
+                                    td.p-3 30/07/2021
+                                    td.p-3 20,000,000.0
+                                    td.p-3 20,000,000.0
+                                    td.p-3 CIF - Tên
+                    nav.pagination-nav.d-flex.align-items-center.justify-content-between   
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next
+
+                #tab-2.panel
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th 
+                                    .title
+                                        span STT
+                                th 
+                                    .title 
+                                        span HĐ vay- KUNN
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Loạn sản phẩm
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Loại tiền
+                                th 
+                                    .title 
+                                        span Dư nợ
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Số tiền vay
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày giải ngân
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày đáo hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Ngày tất toán
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Thời hạn vay
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th  
+                                    .title 
+                                        span Lãi suất
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Nhóm nợ
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Mục đích vay
+                                th 
+                                    .title 
+                                        span TSĐB
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Số tiền trễ hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                            -for(i=0; i<6; i++)
+                                tr 
+                                    td 1
+                                    td  00270489653214
+                                    td STK - tại quầy
+                                    td VND
+                                    td 50,000,000
+                                    td 50,000,000
+                                    td 30/07/2021
+                                    td 30/07/2021
+                                    td 30/07/2021
+                                    td 3 tháng
+                                    td 16,5%
+                                    td 1
+                                    td KKH
+                                    td 
+                                        span(data-fancybox="tien-vay-"+i+"" data-src="#popup-detail-loan" data-touch="false") DIENGIAI_TSDB:PT VAN CHUYEN, NHA O BEN VAY, MAY MOC THIET BI, ....
+                                    td 50,000,000
+                    nav.pagination-nav.d-flex.align-items-center  
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next
+                
+                #tab-3.panel
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th 
+                                    .title
+                                        span STT
+                                th 
+                                    .title 
+                                        span Dịch vụ
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Đăng ký DV
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Phương thức xác thực
+                                th 
+                                    .title 
+                                        span Hạn mức GD
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Hạn mức GD 1 lần
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Hạn mức GD còn lại/ngày
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Hạn mức GD còn lại/tháng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Ngày GD gần nhất
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Doanh số 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th  
+                                    .title 
+                                        span Mức GD cao nhất 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Được miễn phí DV
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Số tiền nợ phí DV (nếu có)
+                            -for(i=0; i<6; i++)
+                                tr 
+                                    td 1
+                                    td Internet
+                                    td 
+                                        input#checkbox.form-control(type="checkbox")
+                                        span.form-label
+                                    td Email
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 30/07/2021
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 
+                                        input#checkbox.form-control(type="checkbox")
+                                        span.form-label
+                                    td 20,000,000.0
+                    nav.pagination-nav.d-flex.align-items-center  
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next
+
+                #tab-4.panel
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th 
+                                    .title
+                                        span STT
+                                th 
+                                    .title 
+                                        span Loại thẻ
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Trạng thái
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Phương thức xác thực
+                                th 
+                                    .title 
+                                        span Hạn mức thẻ (ĐV thẻ TD)
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Hạn mức còn lại (ĐV thẻ TD)
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Dư nợ hiện tại
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày mở
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Ngày đến hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Đăng ký thanh toán trực tuyến
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th  
+                                    .title 
+                                        span Ngày GD cuối cùng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Doanh số 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Giá trị GD cao nhất 6T
+                            -for(i=1; i<7; i++)
+                                tr 
+                                    td 1
+                                    td Ghi nợ nội địa
+                                    td 
+                                        .status.status--bggray
+                                            span.color-black Tạm khóa
+                                        .status.status--bggreen2
+                                            span.color-black Active
+                                    td Email
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 30/07/2021
+                                    td 30/07/2021
+                                    td 
+                                        input#checkbox.form-control(type="checkbox")
+                                        span.form-label
+                                    td 30/07/2021
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                            
+                            
+                    nav.pagination-nav.d-flex.align-items-center  
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next
+
+                #tab-5.panel
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th 
+                                    .title
+                                        span STT
+                                th 
+                                    .title 
+                                        span Loại SP
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Mã SP
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Số HĐ
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Giá trị hợp đồng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Phí BH căn bản (FYP)
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày phát hành
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Định kỳ đóng phí
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Thời hạn hợp đồng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Kỳ đóng tiền tiếp theo
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th  
+                                    .title 
+                                        span Số tiền đến hạn
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Tổng số tiền đã đóng
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Công ty BH
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                            -for(i=0; i<6; i++)
+                                tr 
+                                    td 1
+                                    td UL/ILP
+                                    td 1234567890
+                                    td 00270489653214
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td 30/07/2021
+                                    td Nửa năm  
+                                    td 30/07/2021
+                                    td 30/09/2021
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td Daiichi-Life 
+                    nav.pagination-nav.d-flex.align-items-center  
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next
+
+                #tab-6.panel
+                    .panel-header.d-flex.align-items-center.justify-content-between 
+                        .count-money.d-flex.align-items-center 
+                            p Số dư tại ĐVKD:&nbsp; 
+                                span.fw-bold.color-black 22.000.000.000
+                            p.ms-5 USD:&nbsp;
+                                span.fw-bold.color-black 100.000                            
+                        .search-box 
+                            form(action="") 
+                                .form-group 
+                                    input.form-control(type="text")
+                                    button
+                                        img.icon(src="./images/icons/search-black.svg", alt="")
+                    .panel-body 
+                        table 
+                            tr 
+                                th 
+                                    .title
+                                        span STT
+                                th 
+                                    .title 
+                                        span Tham gia
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title
+                                        span Loại sản phẩm
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Tên chương trình
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Mã chương trình
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày bắt đầu
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Ngày kết thúc
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                            -for(i=0; i<4; i++)
+                                tr 
+                                    td 1
+                                    td 
+                                        input#checkbox.form-control(type="checkbox")
+                                        span.form-label
+                                    td Tiền gửi
+                                    td HDBank privilege banking trải nghiệm dịch vụ thượng đỉnh
+                                    td 00270489653214
+                                    td 30/07/2021
+                                    td 30/09/2021
+                                    
+                    nav.pagination-nav.d-flex.align-items-center  
+                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
+                        ul.pagination.d-flex.align-items-center  
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_before
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#')
+                                    em.material-icons navigate_next

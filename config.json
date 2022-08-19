@@ -3,10 +3,15 @@
 		"src/fonts/**"
 	],
 	"js": [
-		"src/_plugins/js/**.js",
-		"node_modules/lazysizes/lazysizes.js"
+		"node_modules/jquery/dist/jquery.js",
+		"node_modules/moment/min/moment.min.js",
+		"node_modules/moment/locale/vi.js",
+		"node_modules/daterangepicker/daterangepicker.js",
+		"node_modules/chart.js/dist/chart.js",
+		"src/_plugins/js/**.js"
 	],
 	"css": [
-		"src/_plugins/css/**.css"
+		"src/_plugins/css/**.css",
+		"node_modules/daterangepicker/daterangepicker.css"
 	]
 }

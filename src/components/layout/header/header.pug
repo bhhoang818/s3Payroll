@@ -1,0 +1,77 @@
+header.top-bar
+    .wrap-header.d-flex.align-items-center
+        .wrap-header-left.d-flex.align-items-center
+            a.wrap-header-left_icon.d-flex.align-items-center.justify-content-center(href="") 
+                img(src="./images/icons/icons-windows.svg", alt="") 
+            h1 
+                a.wrap-header-left_logo(href="/")
+                    img(src="./images/logo.svg", alt="")
+        .wrap-header-center 
+            .marquee 
+                .marquee-wrapper  
+                    .marquee_text.d-flex.align-items-center
+                        -for(i=0; i<6; i++)
+                            .marquee-list_item.d-flex.align-items-center
+                                span
+                                    img(src="./images/icons/fire-line.svg", alt="")
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eaque!
+        .wrap-header-right.d-flex.align-items-center
+            .wrap-search 
+                .search-button 
+                    img(src="./images/icons/search.svg", alt="")
+            .wrap-list-user 
+                ul.d-flex.align-items-center 
+                    li.nav-item
+                        a.username.d-flex.align-items-center(href="thong-tin-khach-hang.html") 
+                            p Khoa 
+                            img(src="./images/header/avatar.jpg", alt="")
+                    li.nav-item 
+                        a.infor(href="")
+                            img(src="./images/icons/info.svg", alt="") 
+                    li.nav-item 
+                        .notification 
+                            img(src="./images/icons/bell.svg", alt="")
+                            .notification_number 
+                                span 99
+                        .notification-wrapper 
+                            .container--tabs 
+                                .tabs-header.d-flex.align-items-center.justify-content-between 
+                                    p.title Thông báo
+                                    ul.nav-tabs.d-flex.align-items-center 
+                                        li.active
+                                            a(href='#tab-1') Chưa đọc
+                                        li
+                                            a(href='#tab-2') Đã đọc
+                                .tab-content
+                                    #tab-1.panel.active 
+                                        ul.panel-list 
+                                            -for(i=0; i<5; i++)
+                                                li 
+                                                    .wrap-content 
+                                                        .date-time 
+                                                            span 11/12/2021
+                                                        .content.d-flex.align-items-center.justify-content-between  
+                                                            a(href="") 
+                                                                p Amet minim mollit non deserunt ullamco aliqua ...
+                                                            a(href="") 
+                                                                span Chi tiết
+                                    #tab-2.panel
+                                        ul.panel-list 
+                                            -for(i=0; i<5; i++)
+                                                li 
+                                                    .wrap-content 
+                                                        .date-time 
+                                                            span 11/12/2021
+                                                        .content.d-flex.align-items-center.justify-content-between 
+                                                            a(href="") 
+                                                                p Amet minim mollit non deserunt ullamco aliqua ...
+                                                            a(href="") 
+                                                                span Chi tiết
+                    li.nav-item 
+                        a.logout(href="") 
+                            img(src="./images/icons/logout.svg", alt="")
+            .btn.btn-hamburger-lines.ms-2
+                span
+                span
+                span
+                span

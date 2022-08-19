@@ -1,0 +1,123 @@
+section.hero-section.info-customer-page 
+    .container-fluid
+        .row
+            .col-xxl-3.col-xl-12.wrap-left 
+                include ../layout/inforCustomer/index.pug
+            .col-xxl-9.col-xl-12.wrap-right 
+                .container--tabs.bg-white.rounded-3.p-4
+                    ul.nav.nav-tabs.d-flex.align-items-center.mb-4
+                        li.active
+                            a(href='#tab-1') Thông tin tổng hợp
+                        li
+                            a(href='#tab-2') Khách hàng liên quan
+                    .tab-content
+                        #tab-1.panel.active
+                            .wrapper.d-flex.align-items-center
+                                .wrapper-left.bg-light0.p-3.rounded-3
+                                    .wrapper-heading.d-flex.align-items-center.justify-content-between.mb-4
+                                        p.fw-bold Tổng có QĐ: 
+                                            span 50.000.000.000 VNĐ
+                                        a.color-blue(href="") Chi tiết
+                                    .wrapper-body
+                                        .wrap-chart.d-flex.align-items-center
+                                            canvas#myChart1(style="width:100%;max-width:200px; max-height: 200px")
+                                            ul.list-chart.ms-5 
+                                                li.mb-2
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-red
+                                                        span.ms-2.color-black Tiền gửi KKH
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                                li.mb-2 
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-orange
+                                                        span.ms-2.color-black Tiền gửi CKH
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                                li.mb-2
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-yellow
+                                                        span.ms-2.color-black Trái phiếu
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                .wrapper-right.bg-light0.p-3.rounded-3.ms-3
+                                    .wrapper-heading.d-flex.align-items-center.justify-content-between.mb-4 
+                                        p.fw-bold Tổng có QĐ: 
+                                            span 50.000.000.000 VNĐ
+                                        a.color-blue(href="") Chi tiết
+                                    .wrapper-body
+                                        .wrap-chart.d-flex.align-items-center
+                                            canvas#myChart2(style="width:100%;max-width:200px; max-height: 200px")
+                                            ul.list-chart.ms-5  
+                                                li.mb-2
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-yellow
+                                                        span.ms-2.color-black Vay thế chấp
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                                li.mb-2 
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-red
+                                                        span.ms-2.color-black Vay tín chấp
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                                li.mb-2
+                                                    .d-flex.align-items-center
+                                                        span.dot.bg-green
+                                                        span.ms-2.color-black Thẻ tín dụng
+                                                    p.fw-bold.color-black.ps-4 50.000.000 VNĐ
+                                                li.d-flex.align-items-center 
+                                                    a(href="") Nhóm nợ:&nbsp;
+                                                        span.fw-bold.color-black 1
+                                                    a.ms-4(href="") Xếp hạng:&nbsp;
+                                                        span.fw-bold.color-black 5
+                    .panel
+                        .panel-heading.mb-4.mt-4
+                            h1.fw-bold Dịch vụ trực tuyến & Sản phẩm
+                        .panel-body
+                            .panel-body--list.bg-green0.rounded-3.mb-3.p-2
+                                .row
+                                    .col-xl-4
+                                        .form-check.rounded-3.p-3.d-flex.align-items-center.justify-content-between.bg-light  
+                                            input.form-control#check-default(type="checkbox", name="" checked)
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") Internet Banking
+                                    .col-xl-4
+                                        .form-check.rounded-3.p-3.d-flex.align-items-center.justify-content-between.bg-light     
+                                            input.form-control#check-default(type="checkbox", name="" )
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") SMS Banking
+                                            a.fw-simibold.color-blue(href="") Đăng ký
+                                    .col-xl-4
+                                        .form-check.rounded-3.p-3.d-flex.align-items-center.justify-content-between.bg-light     
+                                            input.form-control#check-default(type="checkbox", name="" checked)
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") Mobile Banking
+                            .panel-body--list
+                                .row
+                                    .col-xl-4
+                                        .form-check.bg-orange0.rounded-3.ps-3.pe-3.pt-4.pb-4.d-flex.align-items-center.justify-content-between  
+                                            input.form-control#check-default(type="checkbox", name="" checked)
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") Thẻ
+                                            a.fw-simibold.color-blue(href="") Đăng ký 
+                                    .col-xl-4
+                                        .form-check.bg-red1.rounded-3.ps-3.pe-3.pt-4.pb-4.d-flex.align-items-center.justify-content-between(data-fancybox data-src='#reGuLar')  
+                                            input.form-control#check-default(type="checkbox", name="" )
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") Dịch vụ chi lương
+                                            
+                                    .col-xl-4
+                                        .form-check.bg-blue1.rounded-3.ps-3.pe-3.pt-4.pb-4.d-flex.align-items-center.justify-content-between   
+                                            input.form-control#check-default(type="checkbox", name="")
+                                            label.fw-simibold.color-black.label-checkbox(for="#check-default") Chương trình khuyến mãi
+                                            a.fw-simibold.color-blue(href="") Đăng ký  
+include ./table.pug
+include ../popUp/PopUpReGuLar.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

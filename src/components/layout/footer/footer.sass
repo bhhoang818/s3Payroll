@@ -1,0 +1,24 @@
+footer
+    width: 100%
+    margin-top: 24px
+    background: $white
+    position: fixed
+    bottom: 0
+    display: none
+
+    .wrapper-container
+        width: 100%
+        height: 100%
+        padding: 24px
+        background: $white
+        .coppyright
+            justify-content: center
+            li
+                padding: 0 8px
+                a
+                    color: $brand-grey
+                    font-size: r(18px)
+            li + li
+                border-left: 1px solid $brand-grey
+    @media screen and ( max-width: 1024.98px )
+        position: static
